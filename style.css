@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  text-align: center; /* To center the text */
+  position: absolute; /* For centering vertically and horizontally */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering trick */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
